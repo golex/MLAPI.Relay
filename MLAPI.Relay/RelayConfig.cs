@@ -17,6 +17,7 @@ namespace MLAPI.Relay
         public bool AllowTemporaryAlloc = true;
         public int MaxTemporaryAlloc = 1024 * 64;
         public ushort ListenPort = 8888;
+        public string ListenIP = "0.0.0.0";
         public uint TicksPerSecond = 64;
     }
 

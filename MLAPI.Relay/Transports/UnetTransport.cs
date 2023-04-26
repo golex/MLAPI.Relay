@@ -105,7 +105,7 @@ namespace MLAPI.Relay.Transports
 
             unetManager = new NetLibraryManager(unetConfig.GlobalConfig);
 
-            hostId = unetManager.AddHost(new HostTopology(unetConfig.ConnectionConfig, unetConfig.MaxConnections), Program.Config.ListenPort, null);
+            hostId = unetManager.AddHost(new HostTopology(unetConfig.ConnectionConfig, unetConfig.MaxConnections), Program.Config.ListenPort, Program.Config.ListenIP);
         }
 
         public override RelayConfig BeforeSerializeConfig(RelayConfig config)
